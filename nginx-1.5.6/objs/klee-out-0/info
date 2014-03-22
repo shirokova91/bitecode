@@ -1,0 +1,21 @@
+/home/maria/study/myklee/Release+Asserts/bin/klee --posix-runtime --libc=klee nginx_pcre
+PID: 8034
+Started: 2014-03-22 05:28:38
+BEGIN searcher description
+<InterleavedSearcher> containing 2 searchers:
+RandomPathSearcher
+WeightedRandomSearcher::CoveringNew
+</InterleavedSearcher>
+END searcher description
+Finished: 2014-03-22 05:28:42
+Elapsed: 00:00:04
+KLEE: done: explored paths = 1
+KLEE: done: avg. constructs per query = 15
+KLEE: done: total queries = 1
+KLEE: done: valid queries = 0
+KLEE: done: invalid queries = 1
+KLEE: done: query cex = 1
+
+KLEE: done: total instructions = 354
+KLEE: done: completed paths = 1
+KLEE: done: generated tests = 1

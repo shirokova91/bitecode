@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+import os, sys
+
+def main():
+
+    
+    os.execvp("llvm-ar", ["llvm-ar"]+sys.argv[1:])
+    return 1
+
+if __name__ == '__main__':
+    main()
+

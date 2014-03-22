@@ -1,0 +1,13 @@
+Error: memory error: out of bound pointer
+File: /home/maria/study/myklee/runtime/klee-libc/strlen.c
+Line: 14
+Stack: 
+	#0 00288491 in strlen (str=1076793359) at /home/maria/study/myklee/runtime/klee-libc/strlen.c:14
+	#1 00064610 in ngx_strerror_init () at /home/maria/study/new_nginx/nginx-1.5.6/src/os/unix/ngx_errno.c:67
+	#2 00003765 in main (argc=1, argv=219915472) at /home/maria/study/new_nginx/nginx-1.5.6/src/core/nginx.c:211
+Info: 
+	address: 1076793359
+	next: object at 1077092408 of size 4
+		MO19[4] (no allocation info)
+	prev: object at 1076717472 of size 768
+		MO20[768] (no allocation info)

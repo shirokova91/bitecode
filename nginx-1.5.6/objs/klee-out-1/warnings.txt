@@ -1,0 +1,77 @@
+KLEE: WARNING ONCE: function "ngx_shmtx_lock" has inline asm
+KLEE: WARNING ONCE: function "ngx_spinlock" has inline asm
+KLEE: WARNING ONCE: function "ngx_cpuid" has inline asm
+KLEE: WARNING: undefined reference to function: __errno_location
+KLEE: WARNING: undefined reference to function: __fgetc_unlocked
+KLEE: WARNING: undefined reference to function: __fputc_unlocked
+KLEE: WARNING: undefined reference to function: accept
+KLEE: WARNING: undefined reference to function: accept4
+KLEE: WARNING: undefined reference to function: closedir
+KLEE: WARNING: undefined reference to function: connect
+KLEE: WARNING: undefined reference to function: crc32
+KLEE: WARNING: undefined reference to function: crypt_r
+KLEE: WARNING: undefined reference to function: deflate
+KLEE: WARNING: undefined reference to function: deflateEnd
+KLEE: WARNING: undefined reference to function: deflateInit2_
+KLEE: WARNING: undefined reference to function: endutent
+KLEE: WARNING: undefined reference to variable: environ
+KLEE: WARNING: undefined reference to function: epoll_create
+KLEE: WARNING: undefined reference to function: epoll_ctl
+KLEE: WARNING: undefined reference to function: epoll_wait
+KLEE: WARNING: undefined reference to function: fstatat64
+KLEE: WARNING: undefined reference to function: fwrite
+KLEE: WARNING: undefined reference to function: getenv
+KLEE: WARNING: undefined reference to function: getgrnam
+KLEE: WARNING: undefined reference to function: gethostbyname
+KLEE: WARNING: undefined reference to function: getpwnam
+KLEE: WARNING: undefined reference to function: getsockname
+KLEE: WARNING: undefined reference to function: getsockopt
+KLEE: WARNING: undefined reference to function: getutent
+KLEE: WARNING: undefined reference to function: glob64
+KLEE: WARNING: undefined reference to function: globfree64
+KLEE: WARNING: undefined reference to function: gmtime_r
+KLEE: WARNING: undefined reference to function: initgroups
+KLEE: WARNING: undefined reference to function: localtime
+KLEE: WARNING: undefined reference to function: localtime_r
+KLEE: WARNING: undefined reference to function: mktime
+KLEE: WARNING: undefined reference to function: opendir
+KLEE: WARNING: undefined reference to function: posix_fadvise64
+KLEE: WARNING: undefined reference to function: posix_memalign
+KLEE: WARNING: undefined reference to function: prctl
+KLEE: WARNING: undefined reference to function: pread64
+KLEE: WARNING: undefined reference to function: printf
+KLEE: WARNING: undefined reference to function: pwrite64
+KLEE: WARNING: undefined reference to function: qsort
+KLEE: WARNING: undefined reference to function: random
+KLEE: WARNING: undefined reference to function: readdir64
+KLEE: WARNING: undefined reference to function: readv
+KLEE: WARNING: undefined reference to function: realpath
+KLEE: WARNING: undefined reference to function: recvmsg
+KLEE: WARNING: undefined reference to function: sched_setaffinity
+KLEE: WARNING: undefined reference to function: sched_yield
+KLEE: WARNING: undefined reference to function: sem_destroy
+KLEE: WARNING: undefined reference to function: sem_init
+KLEE: WARNING: undefined reference to function: sem_post
+KLEE: WARNING: undefined reference to function: sem_wait
+KLEE: WARNING: undefined reference to function: sendfile64
+KLEE: WARNING: undefined reference to function: sendmsg
+KLEE: WARNING: undefined reference to function: setitimer
+KLEE: WARNING: undefined reference to function: setsockopt
+KLEE: WARNING: undefined reference to function: setutent
+KLEE: WARNING: undefined reference to function: shutdown
+KLEE: WARNING: undefined reference to function: sigaddset
+KLEE: WARNING: undefined reference to function: sigemptyset
+KLEE: WARNING: undefined reference to function: sigsuspend
+KLEE: WARNING: undefined reference to function: srandom
+KLEE: WARNING: undefined reference to variable: stderr
+KLEE: WARNING: undefined reference to function: strerror
+KLEE: WARNING: undefined reference to function: strftime
+KLEE: WARNING: undefined reference to function: strpbrk
+KLEE: WARNING: undefined reference to function: strstr
+KLEE: WARNING: undefined reference to function: sysconf
+KLEE: WARNING: undefined reference to function: usleep
+KLEE: WARNING: undefined reference to function: utmpname
+KLEE: WARNING: undefined reference to function: writev
+KLEE: WARNING: undefined reference to function: raise (UNSAFE)!
+KLEE: WARNING ONCE: calling external: syscall(195, 245842256, 246126248)
+KLEE: WARNING ONCE: calling external: strerror(0)

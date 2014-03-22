@@ -1,0 +1,8 @@
+2014/03/22 05:29:27 [emerg] 8042#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2014/03/22 05:36:47 [emerg] 8118#0: bind() to 0.0.0.0:80 failed (13: Permission denied)
+2014/03/22 05:38:15 [emerg] 8128#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/22 05:38:15 [emerg] 8128#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/22 05:38:15 [emerg] 8128#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/22 05:38:15 [emerg] 8128#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/22 05:38:15 [emerg] 8128#0: bind() to 0.0.0.0:80 failed (98: Address already in use)
+2014/03/22 05:38:15 [emerg] 8128#0: still could not bind()

@@ -1,0 +1,1 @@
+PATH=`pwd`:$PATH make CC=clang CXX=clang++ V=1 CFLAGS=-emit-llvm CXXFLAGS=-emit-llvm -j4 

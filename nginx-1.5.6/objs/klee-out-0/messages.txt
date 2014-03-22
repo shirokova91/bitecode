@@ -1,0 +1,2 @@
+KLEE: ERROR: /home/maria/study/myklee/runtime/klee-libc/strlen.c:14: memory error: out of bound pointer
+KLEE: NOTE: now ignoring this error at this location

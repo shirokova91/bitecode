@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+import os, sys
+
+
+def main():
+    print >>sys.stderr, sys.argv
+    # Otherwise, strip out arguments that llvm-ld doesn't understand. I don't
+    # want my previous explicit declaration of hackyness to imply that this bit
+    # of code here is not also a complete and total hack, it is.
+    args = sys.argv[1:]
+    linkArgs = []
+
+    i = 0
+    while i < len(args):
+	if args[i] in ('-plugin', '-soname', '-dynamic-linker', '-rpath', '-z'):
+	      i+=2
+	      continue
+        if args[i] in ('-emit-llvm', '-g', '--sysroot=/','-W', '-O', '-D', '-f', '--no-add-needed', '--as-needed', '--eh-frame-hdr', '--hash-style=gnu', '--build-id', 'elf_i386', '-m', '-shared', '--no-as-needed', '-fnested-functions', '-pthread') or args[i].startswith('-l') or args[i].startswith('-L') or args[i].startswith("/usr"):
+              i+=1
+	      continue
+        
+        linkArgs.append(args[i])
+	i+=1
+   
+    print >> sys.stderr, linkArgs
+    os.execvp("/home/maria/study/llvm-3.2.src/Release+Asserts/bin/llvm-link", ["/home/maria/study/llvm-3.2.src/Release+Asserts/bin/llvm-link"]+linkArgs)
+    return 1
+
+if __name__ == '__main__':
+    main()
+
